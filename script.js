@@ -9,21 +9,21 @@ function generatePassword()
     window.alert("Enter a valid number between 8 and 50");
     var length = window.prompt("How many characters do you want?");
   }
-  var storeNumber = confirm("Do you want to include number?");
-  var storeUpper = confirm("Do you want to include upper case alphabet?");
-  var storeLower = confirm("Do you want to include lower case alphabet?");
-  var storeSpecial = confirm("Do you want to include special character?");
+  var selectNumber = confirm("Do you want to include number?");
+  var selectUpper = confirm("Do you want to include upper case alphabet?");
+  var selectLower = confirm("Do you want to include lower case alphabet?");
+  var selectSpecial = confirm("Do you want to include special character?");
   while (
-    storeNumber === false &&
-    storeUpper === false &&
-    storeLower === false &&
-    storeSpecial === false
+    selectNumber === false &&
+    selectUpper === false &&
+    selectLower === false &&
+    selectSpecial === false
   ) {
     window.alert("You must select at least 1 character");
-    var storeNumber = confirm("Do you want to include number?");
-    var storeUpper = confirm("Do you want to include upper case alphabet?");
-    var storeLower = confirm("Do you want to include lower case alphabet?");
-    var storeSpecial = confirm("Do you want to include special character?");
+    var selectNumber = confirm("Do you want to include number?");
+    var selectUpper = confirm("Do you want to include upper case alphabet?");
+    var selectLower = confirm("Do you want to include lower case alphabet?");
+    var selectSpecial = confirm("Do you want to include special character?");
   }
   
   for (var i = 0; i < length; i++) {
