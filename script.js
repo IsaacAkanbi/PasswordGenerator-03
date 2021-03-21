@@ -27,19 +27,15 @@ function generatePassword()
   }
   
   for (var i = 0; i < length; i++) {
-    randomPassword =
-      randomPassword +
-      possibleCharacter[Math.floor(Math.random() * possibleCharacter.length)];
+    var randomPassword = randomPassword + possibleCharacter[Math.floor(Math.random() * possibleCharacter.length)];
     console.log(randomPassword);
   }
   return randomPassword;
 }
-
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
 }
 generateBtn.addEventListener("click", writePassword);
