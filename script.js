@@ -1,6 +1,6 @@
 //Assignment Code
 var generateBtn = document.querySelector("#generate");
-var possibleCharacter ="ABCDEFGHIJKLMNOPQRSUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(){}[]=<>/,.";
+var possibleCharacter ="ABCDEFGHIJKLMNOPQRSUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(){}[]=<>/,";
 
 function generatePassword()
 {
@@ -26,7 +26,7 @@ function generatePassword()
     var selectSpecial = confirm("Do you want to include special character?");
   }
   
-  for (var i = 0; i < length; i++) {
+  for (var i =0; i < length; i++) {
     var randomPassword = randomPassword + possibleCharacter[Math.floor(Math.random() * possibleCharacter.length)];
     console.log(randomPassword);
   }
@@ -38,6 +38,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
 }
-generateBtn.addEventListener("click", writePassword);
-
 // Add event listener to generate button
+
+generateBtn.addEventListener("click", writePassword);
